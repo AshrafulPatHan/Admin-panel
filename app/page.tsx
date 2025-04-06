@@ -1,9 +1,13 @@
-import { Button } from "@/components/ui/button"
+import Navbar from "@/components/navigation/navbar"
+import Sidebar from "@/components/navigation/sidebar"
+
 
 export default function Home() {
   return (
     <div>
-       <Button>Click me</Button>
+      <Navbar/>
+      <Sidebar/>
+      <div></div>
     </div>
   );
 }
