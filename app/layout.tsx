@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/navigation/sidebar";
 import Navbar from "@/components/navigation/navbar";
+import { Theme } from "@radix-ui/themes"; // Import the Theme provider
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,15 +30,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex flex-row items-start gap-20 ">
-          <Sidebar/>
-          <div>
-            <Navbar  />
-            <div className="body">
-              {children}
+        {/* Wrap everything in the Theme provider */}
+        <Theme>
+          <div className="flex flex-row items-start gap-20">
+            <Sidebar />
+            <div>
+              <Navbar />
+              <div className="body">{children}</div>
             </div>
           </div>
-        </div>
+        </Theme>
       </body>
     </html>
   );

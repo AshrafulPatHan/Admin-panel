@@ -1,6 +1,9 @@
+'use client';
+
 import Image from "next/image";
 import Logo from "@/public/Logo.png";
-import dL from "@/public/dashboard.png";
+// import dL from "@/public/dashboard.png";
+import { Button, DropdownMenu } from "@radix-ui/themes";
 
 export default function Sidebar() {
    return(
@@ -15,6 +18,40 @@ export default function Sidebar() {
                <hr className="w-[210px] mb-4 " />
                <div>
                   <p className="h-[48px] ">Profile</p>
+                  <DropdownMenu.Root>
+                     <DropdownMenu.Trigger>
+                        <Button variant="soft">
+                           Options
+                           <DropdownMenu.TriggerIcon />
+                        </Button>
+                     </DropdownMenu.Trigger>
+                     <DropdownMenu.Content>
+                        <DropdownMenu.Item shortcut="⌘ E">Edit</DropdownMenu.Item>
+                        <DropdownMenu.Item shortcut="⌘ D">Duplicate</DropdownMenu.Item>
+                        <DropdownMenu.Separator />
+                        <DropdownMenu.Item shortcut="⌘ N">Archive</DropdownMenu.Item>
+
+                        <DropdownMenu.Sub>
+                           <DropdownMenu.SubTrigger>More</DropdownMenu.SubTrigger>
+                           <DropdownMenu.SubContent>
+                              <DropdownMenu.Item>Move to project…</DropdownMenu.Item>
+                              <DropdownMenu.Item>Move to folder…</DropdownMenu.Item>
+
+                              <DropdownMenu.Separator />
+                              <DropdownMenu.Item>Advanced options…</DropdownMenu.Item>
+                           </DropdownMenu.SubContent>
+                        </DropdownMenu.Sub>
+
+                        <DropdownMenu.Separator />
+                        <DropdownMenu.Item>Share</DropdownMenu.Item>
+                        <DropdownMenu.Item>Add to favorites</DropdownMenu.Item>
+                        <DropdownMenu.Separator />
+                        <DropdownMenu.Item shortcut="⌘ ⌫" color="red">
+                           Delete
+                        </DropdownMenu.Item>
+                     </DropdownMenu.Content>
+                  </DropdownMenu.Root>
+
                </div>
                <hr className="w-[210px] mb-4 "/>
                <div className="flex flex-col items-start">
