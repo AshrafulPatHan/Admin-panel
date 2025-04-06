@@ -4,10 +4,14 @@ import Sidebar from "@/components/navigation/sidebar"
 
 export default function Home() {
   return (
-    <div>
-      <Navbar/>
+    <div className="flex flex-row items-start gap-20 ">
       <Sidebar/>
-      <div></div>
+      <div>
+        <Navbar  />
+        <div className="body">
+          h
+        </div>
+      </div>
     </div>
   );
 }
