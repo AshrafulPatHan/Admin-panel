@@ -18,6 +18,13 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { SlArrowDown } from "react-icons/sl";
+import { SiLibreofficewriter } from "react-icons/si";
+
+
+
+
+
+
 
 
 export default function Sidebar() {
@@ -37,7 +44,7 @@ export default function Sidebar() {
                </div>
                <hr className="w-[210px] mt-4 mb-4 "/>
                <div className="flex flex-col items-start">
-                  {/* Dashboards --------- */}
+                  {/* ------------------------------ Dashboards --------- */}
                   <DropdownMenu>
                      <DropdownMenuTrigger asChild>
                      <Button variant="outline" className="w-[208px] justify-evenly px-9 h-[48px] bg-[#58585E] hover:bg-[#202020] 
@@ -75,18 +82,24 @@ export default function Sidebar() {
                       text-white ">
                      <span className="mr-5">A</span> Analytics
                   </button>
-                  <button className="w-[206px] justify-evenly px-9 h-[48px] ml-[1.49px] bg-[#ffa9a9d0] mt-1 border-[#202020] rounded-none 
+                  <button className="w-[206px] justify-evenly px-9 h-[48px] ml-[1.49px] bg-[#ffa9a9d0] mt-[4.5px] border-[#202020] rounded-none 
                       text-white ">
                      <span className="mr-5">S</span> Smart Home
                   </button>
                </div>
                <div>
-                  <h2 className="mt-3 text-blue-500">PAGES</h2>
-                  <div className="flex flex-col items-start gap-[24px] ml-2 ">
+                  {/* ------------------------ page --------------------------- */}
+                  <h2 className="mt-3 mb-3 text-blue-500">PAGES</h2>
+                  <div className="flex flex-col items-start gap-[4px] ml-2 ">
                      <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                        <Button variant="outline" className="w-[208px] h-[48px] bg-[#202020] border-[#202020] rounded-none 
-                        text-white ">Open</Button>
+                        <Button variant="outline" className="w-[208px] justify-evenly px-9 h-[48px] bg-[#202020] hover:bg-[#202020] 
+                        hover:text-white border-[#202020] rounded-none 
+                        text-white ">
+                           <Image src={DB} width={16} alt="Dash" />
+                           Dashboards
+                           <SlArrowDown />
+                        </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent className="w-56">
                         <DropdownMenuLabel>My Account</DropdownMenuLabel>
@@ -113,8 +126,13 @@ export default function Sidebar() {
                      </DropdownMenu>
                      <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                        <Button variant="outline" className="w-[208px] h-[48px] bg-[#202020] border-[#202020] rounded-none 
-                        text-white ">Open</Button>
+                        <Button variant="outline" className="w-[208px] justify-evenly px-9 h-[48px] bg-[#202020] hover:bg-[#202020] 
+                        hover:text-white border-[#202020] rounded-none 
+                        text-white ">
+                           <Image src={DB} width={16} alt="Dash" />
+                           Dashboards
+                           <SlArrowDown />
+                        </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent className="w-56">
                         <DropdownMenuLabel>My Account</DropdownMenuLabel>
@@ -141,8 +159,13 @@ export default function Sidebar() {
                      </DropdownMenu>
                      <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                        <Button variant="outline" className="w-[208px] h-[48px] bg-[#202020] border-[#202020] rounded-none 
-                        text-white ">Open</Button>
+                        <Button variant="outline" className="w-[208px] justify-evenly px-9 h-[48px] bg-[#202020] hover:bg-[#202020] 
+                        hover:text-white border-[#202020] rounded-none 
+                        text-white ">
+                           <Image src={DB} width={16} alt="Dash" />
+                           Dashboards
+                           <SlArrowDown />
+                        </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent className="w-56">
                         <DropdownMenuLabel>My Account</DropdownMenuLabel>
@@ -169,8 +192,13 @@ export default function Sidebar() {
                      </DropdownMenu>
                      <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                        <Button variant="outline" className="w-[208px] h-[48px] bg-[#202020] border-[#202020] rounded-none 
-                        text-white ">Open</Button>
+                        <Button variant="outline" className="w-[208px] justify-evenly px-9 h-[48px] bg-[#202020] hover:bg-[#202020] 
+                        hover:text-white border-[#202020] rounded-none 
+                        text-white ">
+                           <Image src={DB} width={16} alt="Dash" />
+                           Dashboards
+                           <SlArrowDown />
+                        </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent className="w-56">
                         <DropdownMenuLabel>My Account</DropdownMenuLabel>
@@ -197,8 +225,13 @@ export default function Sidebar() {
                      </DropdownMenu>
                      <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                        <Button variant="outline" className="w-[208px] h-[48px] bg-[#202020] border-[#202020] rounded-none 
-                        text-white ">Open</Button>
+                        <Button variant="outline" className="w-[208px] justify-evenly px-9 h-[48px] bg-[#202020] hover:bg-[#202020] 
+                        hover:text-white border-[#202020] rounded-none 
+                        text-white ">
+                           <Image src={DB} width={16} alt="Dash" />
+                           Dashboards
+                           <SlArrowDown />
+                        </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent className="w-56">
                         <DropdownMenuLabel>My Account</DropdownMenuLabel>
@@ -227,12 +260,18 @@ export default function Sidebar() {
                </div>
                <hr className="w-[210px]  mb-3 mt-3 "/>
                <div>
-                  <h2>DOCS</h2>
-                  <div className="flex flex-col items-start gap-[24px] ml-2 ">
+                  {/* ------------------------- Docs---------- */}
+                  <h2 className="mt-3 mb-3 text-blue-500">DOCS</h2>
+                  <div className="flex flex-col items-start gap-[4px] ml-2 ">
                      <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                        <Button variant="outline" className="w-[208px] h-[48px] bg-[#202020] border-[#202020] rounded-none 
-                        text-white ">Open</Button>
+                        <Button variant="outline" className="w-[208px] justify-evenly px-9 h-[48px] bg-[#202020] hover:bg-[#202020] 
+                        hover:text-white border-[#202020] rounded-none 
+                        text-white ">
+                           <Image src={DB} width={16} alt="Dash" />
+                           Dashboards
+                           <SlArrowDown />
+                        </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent className="w-56">
                         <DropdownMenuLabel>My Account</DropdownMenuLabel>
@@ -259,8 +298,13 @@ export default function Sidebar() {
                      </DropdownMenu>
                      <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                        <Button variant="outline" className="w-[208px] h-[48px] bg-[#202020] border-[#202020] rounded-none 
-                        text-white ">Open</Button>
+                        <Button variant="outline" className="w-[208px] justify-evenly px-9 h-[48px] bg-[#202020] hover:bg-[#202020] 
+                        hover:text-white border-[#202020] rounded-none 
+                        text-white ">
+                           <Image src={DB} width={16} alt="Dash" />
+                           Dashboards
+                           <SlArrowDown />
+                        </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent className="w-56">
                         <DropdownMenuLabel>My Account</DropdownMenuLabel>
@@ -285,8 +329,12 @@ export default function Sidebar() {
                         </DropdownMenuGroup>
                         </DropdownMenuContent>
                      </DropdownMenu>
-                     <p>Changelog</p>
+                     
                   </div>
+                  <button className="flex items-center w-[206px] justify-start px-9 h-[48px]  bg-[#9d96f8bd] ml-[1.14px] border-[#202020] rounded-none 
+                      text-white ">
+                     <span className="mr-10"><SiLibreofficewriter /></span> Changelog
+                  </button>
                </div>
             </div>
          </div>
