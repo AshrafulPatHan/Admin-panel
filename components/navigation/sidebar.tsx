@@ -4,6 +4,17 @@ import Image from "next/image";
 import Logo from "@/public/Logo.png";
 // import dL from "@/public/dashboard.png";
 // import { Button, DropdownMenu } from "@radix-ui/themes";
+import { Button } from "@/components/ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuShortcut,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 export default function Sidebar() {
    return(
@@ -17,32 +28,273 @@ export default function Sidebar() {
                </div>
                <hr className="w-[210px] mb-4 " />
                <div>
-                  <p className="h-[48px] ">Profile</p>
+                  <DropdownMenu>
+                     <DropdownMenuTrigger asChild>
+                     <Button variant="outline" className="w-[208px] h-[48px] bg-[#202020] border-[#202020] rounded-none 
+                      text-white ">Open</Button>
+                     </DropdownMenuTrigger>
+                     <DropdownMenuContent className="w-56">
+                     <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                     <DropdownMenuSeparator />
+                     <DropdownMenuGroup>
+                        <DropdownMenuItem>
+                           Profile
+                           <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem>
+                           Billing
+                           <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem>
+                           Settings
+                           <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem>
+                           Keyboard shortcuts
+                           <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+                        </DropdownMenuItem>
+                     </DropdownMenuGroup>
+                     </DropdownMenuContent>
+                  </DropdownMenu>
                </div>
-               <hr className="w-[210px] mb-4 "/>
+               <hr className="w-[210px] mt-4 mb-4 "/>
                <div className="flex flex-col items-start">
-                  <button className="h-[48px] ">Dashboard</button>
-                  <button className="h-[48px] ">Analytics</button>
-                  <button className="h-[48px] ">Smart Home</button>
+                  <DropdownMenu>
+                     <DropdownMenuTrigger asChild>
+                     <Button variant="outline" className="w-[208px] h-[48px] bg-[#202020] border-[#202020] rounded-none 
+                      text-white ">Open</Button>
+                     </DropdownMenuTrigger>
+                     <DropdownMenuContent className="w-56">
+                     <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                     <DropdownMenuSeparator />
+                     <DropdownMenuGroup>
+                        <DropdownMenuItem>
+                           Profile
+                           <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem>
+                           Billing
+                           <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem>
+                           Settings
+                           <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem>
+                           Keyboard shortcuts
+                           <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+                        </DropdownMenuItem>
+                     </DropdownMenuGroup>
+                     </DropdownMenuContent>
+                  </DropdownMenu>
+                  <button></button>
+                  <button></button>
                </div>
                <div>
                   <h2>PAGES</h2>
                   <div className="flex flex-col items-start gap-[24px] ml-2 ">
-                     <p>Pages</p>
-                     <p>Application</p>
-                     <p>Ecommerce</p>
-                     <p>Authentication</p>
-                     <p>E Error</p>
-                     <p>B Error 404</p>
-                     <p>C Error 500</p>
+                     <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                        <Button variant="outline" className="w-[208px] h-[48px] bg-[#202020] border-[#202020] rounded-none 
+                        text-white ">Open</Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent className="w-56">
+                        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuGroup>
+                           <DropdownMenuItem>
+                              Profile
+                              <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Billing
+                              <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Settings
+                              <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Keyboard shortcuts
+                              <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                        </DropdownMenuGroup>
+                        </DropdownMenuContent>
+                     </DropdownMenu>
+                     <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                        <Button variant="outline" className="w-[208px] h-[48px] bg-[#202020] border-[#202020] rounded-none 
+                        text-white ">Open</Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent className="w-56">
+                        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuGroup>
+                           <DropdownMenuItem>
+                              Profile
+                              <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Billing
+                              <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Settings
+                              <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Keyboard shortcuts
+                              <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                        </DropdownMenuGroup>
+                        </DropdownMenuContent>
+                     </DropdownMenu>
+                     <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                        <Button variant="outline" className="w-[208px] h-[48px] bg-[#202020] border-[#202020] rounded-none 
+                        text-white ">Open</Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent className="w-56">
+                        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuGroup>
+                           <DropdownMenuItem>
+                              Profile
+                              <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Billing
+                              <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Settings
+                              <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Keyboard shortcuts
+                              <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                        </DropdownMenuGroup>
+                        </DropdownMenuContent>
+                     </DropdownMenu>
+                     <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                        <Button variant="outline" className="w-[208px] h-[48px] bg-[#202020] border-[#202020] rounded-none 
+                        text-white ">Open</Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent className="w-56">
+                        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuGroup>
+                           <DropdownMenuItem>
+                              Profile
+                              <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Billing
+                              <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Settings
+                              <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Keyboard shortcuts
+                              <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                        </DropdownMenuGroup>
+                        </DropdownMenuContent>
+                     </DropdownMenu>
+                     <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                        <Button variant="outline" className="w-[208px] h-[48px] bg-[#202020] border-[#202020] rounded-none 
+                        text-white ">Open</Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent className="w-56">
+                        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuGroup>
+                           <DropdownMenuItem>
+                              Profile
+                              <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Billing
+                              <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Settings
+                              <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Keyboard shortcuts
+                              <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                        </DropdownMenuGroup>
+                        </DropdownMenuContent>
+                     </DropdownMenu>
                   </div>
                </div>
                <hr className="w-[210px]  mb-3 mt-3 "/>
                <div>
                   <h2>DOCS</h2>
                   <div className="flex flex-col items-start gap-[24px] ml-2 ">
-                     <p>Basic</p>
-                     <p>Components</p>
+                     <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                        <Button variant="outline" className="w-[208px] h-[48px] bg-[#202020] border-[#202020] rounded-none 
+                        text-white ">Open</Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent className="w-56">
+                        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuGroup>
+                           <DropdownMenuItem>
+                              Profile
+                              <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Billing
+                              <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Settings
+                              <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Keyboard shortcuts
+                              <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                        </DropdownMenuGroup>
+                        </DropdownMenuContent>
+                     </DropdownMenu>
+                     <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                        <Button variant="outline" className="w-[208px] h-[48px] bg-[#202020] border-[#202020] rounded-none 
+                        text-white ">Open</Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent className="w-56">
+                        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuGroup>
+                           <DropdownMenuItem>
+                              Profile
+                              <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Billing
+                              <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Settings
+                              <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                           <DropdownMenuItem>
+                              Keyboard shortcuts
+                              <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+                           </DropdownMenuItem>
+                        </DropdownMenuGroup>
+                        </DropdownMenuContent>
+                     </DropdownMenu>
                      <p>Changelog</p>
                   </div>
                </div>
