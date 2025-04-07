@@ -5,6 +5,7 @@ import Sidebar from "@/components/navigation/sidebar";
 import Navbar from "@/components/navigation/navbar";
 import { Theme } from "@radix-ui/themes"; // Import the Theme provider
 import "@radix-ui/themes/styles.css";
+import { ToastContainer } from 'react-toastify';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,7 +38,22 @@ export default function RootLayout({
             <Sidebar />
             <div>
               <Navbar />
-              <div className="body">{children}</div>
+              <div className="body">
+                {children}
+                <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                // transition={Bounce}
+                />
+              </div>
             </div>
           </div>
         </Theme>

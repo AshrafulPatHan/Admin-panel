@@ -17,8 +17,9 @@ export default function Navbar() {
                <AiOutlineMenuUnfold className="text-2xl"/>
             </Link>
             <div className="flex items-center gap-8 text-lg text-green-700">
-               <Link href='gamer' className="hover:text-blue-600">Add data to Asum gamer</Link>
+               <Link href='gamer' className="hover:text-blue-600">Asum gamer news</Link>
                <Link href='#' className="hover:text-blue-600">Add data to techno blogger</Link>
+               <Link href='#' className="hover:text-blue-600">spam</Link>
                <Link href='#' className="hover:text-blue-600">Login</Link>
             </div>
             <div className="flex items-center gap-6">
